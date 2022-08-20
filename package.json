@@ -1,33 +1,54 @@
 {
-  "name": "coffe",
+  "name": "distube-example",
   "version": "1.0.0",
-  "description": "",
-  "main": "coffe.js",
+  "description": "DisTube example music bot.",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "p": "prettier . --write",
+    "postinstall": "husky install"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/distubejs/example.git"
+  },
+  "author": "Skick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/distubejs/example/issues"
+  },
+  "homepage": "https://github.com/distubejs/example#readme",
   "dependencies": {
-    "@distube/youtube-dl": "^1.0.4",
-    "bcrypt": "^5.0.1",
-    "canvacord": "^5.1.0",
-    "discord-mongo-currency": "^1.0.4",
-    "discord-xp": "^1.1.13",
-    "discord.js": "^12.5.1",
-    "distube": "^2.8.12",
-    "ffmpeg-static": "^4.2.7",
+    "@discordjs/opus": "^0.8.0",
+    "@discordjs/voice": "^0.11.0",
+    "@distube/soundcloud": "^1.2.1",
+    "@distube/spotify": "^1.3.2",
+    "@distube/yt-dlp": "^1.1.3",
+    "discord.js": "^14.0.3",
+    "distube": "^4.0.2",
+    "eslint-config-prettier": "^8.5.0",
     "i": "^0.3.7",
-    "install": "^0.13.0",
-    "moment": "^2.29.1",
-    "mongo": "^0.1.0",
-    "mongodb": "^3.6.4",
-    "mongoose": "^5.11.18",
-    "node-opus": "^0.3.3",
-    "node-pre-gyp": "^0.17.0",
-    "opusscript": "^0.0.7",
-    "superagent": "^6.1.0",
-    "ytdl-core": "^4.8.3",
-    "zapmongo": "^2.1.0"
+    "libsodium-wrappers": "^0.7.10"
+  },
+  "devDependencies": {
+    "eslint": "^8.20.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "husky": "^8.0.1",
+    "nano-staged": "^0.8.0",
+    "prettier": "^2.7.1"
+  },
+  "nano-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{json,yml,yaml,md}": [
+      "prettier --write"
+    ]
   }
 }
