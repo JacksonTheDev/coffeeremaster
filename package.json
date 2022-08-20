@@ -1,0 +1,33 @@
+{
+  "name": "coffe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "coffe.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@distube/youtube-dl": "^1.0.4",
+    "bcrypt": "^5.0.1",
+    "canvacord": "^5.1.0",
+    "discord-mongo-currency": "^1.0.4",
+    "discord-xp": "^1.1.13",
+    "discord.js": "^12.5.1",
+    "distube": "^2.8.12",
+    "ffmpeg-static": "^4.2.7",
+    "i": "^0.3.7",
+    "install": "^0.13.0",
+    "moment": "^2.29.1",
+    "mongo": "^0.1.0",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.11.18",
+    "node-opus": "^0.3.3",
+    "node-pre-gyp": "^0.17.0",
+    "opusscript": "^0.0.7",
+    "superagent": "^6.1.0",
+    "ytdl-core": "^4.8.3",
+    "zapmongo": "^2.1.0"
+  }
+}

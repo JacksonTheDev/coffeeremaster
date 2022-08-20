@@ -1,0 +1,18 @@
+{
+  "prefix":"+",
+  "token":"NTYwMjgzMDcyNTcxMTEzNDc0.XJraRg.DFAiG0BfYjPFi-tefyfkvl8W4mU",
+  "staffIDS":["408476557858832385", "504047313698947102"],
+  "version":"v0.2.4",
+  "serverLink":"https://discord.gg/rwE9PmH6SB",
+  "mongoURI":"mongodb+srv://Thomas:Catalina31205505@cluster0.zyneu.mongodb.net/WarningsDB?retryWrites=true&w=majority&ssl=true",
+  "colors":{
+    "default":"0xff8b0c"
+  },
+  "icons":{
+    "musicIcon":"https://i.imgur.com/MbKvj9A.png",
+    "moderationIcon":"https://i.imgur.com/bj2XuF5.png",
+    "secretIcon":"https://www.bridgeheadsoftware.com/wp-content/uploads/2015/06/question-mark-purple.png",
+    "utilityIcon":"https://i.imgur.com/c156Cxe.png"
+  },
+  "devTeam":"CodyBrothers Development Team"
+}

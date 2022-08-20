@@ -1,0 +1,18 @@
+const fs = require('fs');
+const Discord = require('discord.js');
+const config = require('../../config.json');
+module.exports = {
+	name: '',
+	aliases: [''],
+	category: '',
+	description: '',
+	usage: '',
+	guildOnly: false,
+	ownerOnly: false,
+	cooldown: 5,
+	execute: async (message, args) => {
+	const client = message.client;
+	const checkPerms = message.guild.me.hasPermission("MANAGE_MESSAGES") || message.channel.permissionsFor(message.guild.me).has("MANAGE_MESSAGES");
+
+	},
+};
